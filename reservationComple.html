@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="mypage/membership.html" class="login">마이페이지</a>
+      <a href="main.html" class="sign">로그아웃</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="introduce.html">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container">
+      <div class="completed">
+        <div class="comp1">
+          <p>000 고객님</p>
+        </div>
+        <a class="printt"><input type="button" value="인쇄하기" id="print" onclick="window.print()" /></a>
+        <div class="comp2">
+          <h2>예약이 완료되었습니다</h2>
+          <p>예약번호는 12345입니다.<br><br>
+          예약하신 내용이 예약 시 입력하신 이메일로 발송되었습니다. <br>
+          예약 번호를 메모해두시면 빠르고 편리하게 예약을 확인하실 수 있습니다.<br>
+          현재 보유하신 포인트는 10 P 입니다.</p>
+        </div>
+      </div>
+      <div class="completed2">
+        <div class="check1">
+          <h1>날짜 / 투숙 인원</h1>
+          <div class="chk1">
+            <li>체크인</li>
+            <li>체크아웃</li>
+            <li>숙박일 수</li>
+            <li>객실 수</li>
+            <li>투숙 인원</li>
+          </div>
+          <div class="chk2">
+            <li>2020-11-11</li>
+            <li>2020-11-12</li>
+            <li>1일</li>
+            <li>1개</li>
+            <li>2명</li>
+          </div>
+        </div>
+        <div class="check2">
+          <h1>객실</h1>
+          <div class="chk1">
+            <li>패키지</li>
+            <li>객실</li>
+            <li>침대 타입</li>
+            <li>객실 요금</li>
+            <li>부가세</li>
+          </div>
+          <div class="chk2">
+            <li>없음</li>
+            <li>스탠다드 더블</li>
+            <li>더블</li>
+            <li>450,000원</li>
+            <li>50,000원</li>
+          </div>
+        </div>
+        <div class="check3">
+          <h1>기타</h1>
+          <div class="chk1">
+            <li>예약번호</li>
+          </div>
+          <div class="chk2">
+            <li>12345</li>
+          </div>
+          <div class="money">
+            <p>요금합계</p>
+            <p>500,000원</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

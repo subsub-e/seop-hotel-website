@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="loginpage.html" class="login">로그인</a>
+      <a href="signUp.html" class="sign">회원가입</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="introduce.html">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container">
+      <div class="cs">
+        <a>문의하기</a>
+        <hr class="two">
+      </div>
+      <div class="qna">
+        <div>
+          <a class="info">작성자 정보</a>
+          <hr class="infoLine">
+        </div>
+        <div class="infoName">
+          <h3>성명</h3>
+          <span>
+            <input type="text" class="txt">
+          </span>
+        </div>
+        <div class="infoName">
+          <h3>이메일</h3>
+          <span>
+            <input type="text" class="txt">
+          </span>
+        </div>
+        <div class="infoName">
+          <h3>연락처</h3>
+          <span>
+            <input type="text" class="txtt">
+          </span>
+        </div>
+        <div>
+          <a class="info">요청사항</a>
+          <hr class="infoLine">
+        </div>
+        <div class="infoName">
+          <h3>제목</h3>
+          <span>
+            <input type="text" class="txt">
+          </span>
+        </div>
+        <div class="infoName">
+          <h3>내용</h3>
+          <textarea name="name" rows="8" cols="50" placeholder="요청사항을 입력해주세요"></textarea>
+        </div>
+        <div class="cs_privacy">
+          개인정보 수집동의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="cschk">
+          <input type="checkbox" name="privacy" value="동의"><a class="cs_privacy_checklist">개인정보 수집
+            이용동의</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="Database_Hotel_Website_Privacy.html" class="booking_look_privacy"><u>약관보기</u></a>
+        </div>
+        <div class="cs_qnaBtn">
+          <input type="submit" value="신청" id="qnaBtn1" onClick="btn_js_click();">
+          <button type="button" id="qnaBtn2" onclick="location.href='main.html'">
+            <span>취소</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+  <script src="js/mainBookingBar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

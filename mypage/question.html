@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="membership.html" class="login">마이페이지</a>
+      <a href="../main.html" class="sign">로그아웃</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="../roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="../ntroduce.html">호텔소개</a>
+        </div>
+        <a href="../main.html"><img src="../img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="../customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="../notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container_mypage1">
+      <div class="mypage_content">
+        <div class="mypage_content_title">
+          마이페이지
+        </div>
+        <hr class="three">
+        <div class="mypage_content_membership_2">
+          <a href="membership.html">나의 멤버쉽 정보</a>
+        </div>
+        <div class="mypage_content_reservation">
+          <a href="reservationcheck.html">예약 확인 / 취소</a>
+        </div>
+        <div class="mypage_content_coupon">
+          <a href="coupon.html">쿠폰함</a>
+        </div>
+        <div class="mypage_content_service_1">
+          <a href="question.html">문의 내역</a>
+          <a class="mypage_content_membership_1">></a>
+        </div>
+        <div class="mypage_content_privacy">
+          개인정보
+        </div>
+        <hr class="four">
+        <div class="mypage_content_privacy_1">
+          <a href = "password.html">프로필 수정</a>
+        </div>
+        <div class="mypage_content_privacy_2">
+          <a href="withdrawal.html">탈퇴 요청</a>
+        </div>
+      </div>
+      <div class="mypage_main">
+        <div class="mypage_header">
+          my page > 문의 내역
+        </div>
+        <div class="mypage_main_title">
+          문의 내역
+        </div>
+        <hr class = "five">
+        <div class="mypage_main_information">
+          문의 내역을 확인하실수 있습니다.
+        </div>
+        <table class="mypage_question_table">
+          <tr>
+            <th class="mypage_question_table1">제목</th>
+            <th class="mypage_question_table1">작성일</th>
+            <th class="mypage_question_table1">처리 상태</th>
+          </tr>
+          <tr>
+            <td class="mypage_question_table1">예약 관련 문의</td>
+            <td class="mypage_question_table1">2020-11-11</td>
+            <td class = "mypage_question_table_td">처리중</td>
+          </tr>
+          <tr>
+            <td class="mypage_question_table1">포인트가 사라졌어요.</td>
+            <td class="mypage_question_table1">2020-10-11</td>
+            <td class = "mypage_question_table_td2">답변 완료</td>
+          </tr>
+        </table>
+        <div class="searchRoom_1">
+          <a href="../customerService.html" class = "searchRoom_2">1:1 문의하기</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="../roomList.html">예약하기</a></li>
+        <li><a href="../introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="../customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="../notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="../main.html"><img src="../img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="../img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="../img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="../img/copyright.png">
+    </div>
+  </footer>
+  <script src="../js/mainBookingBar.js"></script>
+</body>
+</html>

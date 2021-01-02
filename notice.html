@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="loginpage.html" class="login">로그인</a>
+      <a href="signUp.html" class="sign">회원가입</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="introduce.html">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container">
+      <div class="rList">
+          <a>공지사항</a>
+          <hr class="two">
+      </div>
+      <div class="notice_search">
+        <select class="notice_option" name="search">
+          <option value="">검색조건</option>
+          <option value="title">제목</option>
+          <option value="content">본문</option>
+        </select>
+        <input type="text" name="notice_search_text" value placeholder="검색어를 입력해주세요.">
+        <a href="#" onclick=""><img src="img/search.png" alt="search" class = "notice_searchimg"></a>
+      </div>
+      <table class = "notice_table">
+        <thead class = "notice_thead">
+          <tr class = "notice_tr">
+            <th class = "notice_th">번호</th>
+            <th class = "notice_th">제목</th>
+            <th class = "notice_th">작성자</th>
+            <th class = "notice_th">날짜</th>
+            <th class = "notice_th">조회수</th>
+          </tr>
+        </thead>
+        <tbody class = "notice_tbody">
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr><tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+          <tr class = "notice_tr">
+            <td class = "notice_td">1</td>
+            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td class = "notice_td">이승섭</td>
+            <td class = "notice_td">2020.11.17</td>
+            <td class = "notice_td">100</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="notice_number">
+        <a href="#" onclick=""><img src="img/pre_pre.png" alt="pre_pre" class = "notice_pre_preimg"></a>
+        <a href="#" onclick=""><img src="img/pre.png" alt="pre" class = "notice_preimg"></a>
+        <a href="#" onclick="" class = "notice_pagenumber"><u>1</u></a>
+        <a href="#" onclick=""><img src="img/next.png" alt="next" class = "notice_nextimg"></a>
+        <a href="#" onclick=""><img src="img/next_next.png" alt="next_next" class = "notice_next_nextimg"></a>
+      </div>
+      <div class="notice_button2">
+        <button type="button" name="button" class = notice_button onclick="location.href='noticewrite.html'">글쓰기</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+  <script src="js/mainBookingBar.js"></script>
+</body>
+
+</html>

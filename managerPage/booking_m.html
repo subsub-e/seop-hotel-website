@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <div class="managerscreen">
+      <a href="../manage.html">
+        <img src="../img/logo.png" class="hotelLogo" />
+      </a>
+      <div class="managerTab">
+        <a>관리페이지</a>
+      </div>
+    </div>
+    <!-- 관리자 -->
+    <div class="manage">
+      <a href="../main.html">호텔사이트로 돌아가기</a>
+      <a class="manageProflie">000 관리자</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="manageMenu">
+        <ul>
+          <li class="m_menu">
+            <a href="../managerPage/booking_m.html">예약관리</a>
+          </li>
+          <li class="m_menu">
+            <a href="../managerPage/customer_m.html">고객관리</a>
+          </li>
+          <li class="m_menu">
+            <a href="../managerPage/employee_m.html">직원관리</a>
+          </li>
+          <li class="m_menu">
+            <a href="../managerPage/stock_m.html">재고관리</a>
+          </li>
+          <li class="m_menu">
+            <a href="../managerPage/revenue_m.html">수익통계</a>
+          </li>
+          <li class="m_menu">
+            <a href="../managerPage/question_m.html">문의관리</a>
+          </li>
+          <li class="m_menu"><a href="../managerPage/site_m.html">사이트관리</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container">
+      <div class="rList">
+        <a>예약관리</a>
+        <hr class="two">
+      </div>
+      <div class="notice_search">
+        <select class="notice_option" name="search">
+          <option value="">예약필터</option>
+          <option value="">예약번호</option>
+          <option value="">체크인 날짜</option>
+          <option value="">체크아웃 날짜</option>
+          <option value="">예약회원 ID</option>
+          <option value="">담당직원 ID</option>
+        </select>
+        <input type="text" name="notice_search_text" value placeholder="검색어를 입력해주세요.">
+        <a href="#" onclick=""><img src="../img/search.png" alt="search" class="notice_searchimg"></a>
+      </div>
+      <table class="notice_table">
+        <thead class="notice_thead">
+          <tr class="notice_tr">
+            <th class="notice_th">예약고유번호</th>
+            <th class="notice_th">체크인 날짜</th>
+            <th class="notice_th">체크아웃 날짜</th>
+            <th class="notice_th">예약회원 ID </th>
+            <th class="notice_th">담당직원 ID</th>
+          </tr>
+        </thead>
+        <tbody class="notice_tbody">
+          <tr class="notice_tr">
+            <td onclick="location.href='../managerPage/booking_detail.html'" class="notice_td1">12345</td>
+            <td class="notice_td">2020-11-11</td>
+            <td class="notice_td">2020-11-12</td>
+            <td class="notice_td">qwe123</td>
+            <td class="notice_td">rlaalswns</td>
+          </tr>
+          <tr class="notice_tr">
+            <td onclick="location.href='main.html'" class="notice_td1">12346</td>
+            <td class="notice_td">2020-11-17</td>
+            <td class="notice_td">2020-11-19</td>
+            <td class="notice_td">asd456</td>
+            <td class="notice_td">skadbwls</td>
+          </tr>
+          <tr class="notice_tr">
+            <td onclick="location.href='main.html'" class="notice_td1">12347</td>
+            <td class="notice_td">2020-11-18</td>
+            <td class="notice_td">2020-11-19</td>
+            <td class="notice_td">zxc236</td>
+            <td class="notice_td">dltmdtjq</td>
+          </tr>
+          <tr class="notice_tr">
+            <td onclick="location.href='main.html'" class="notice_td1">12348</td>
+            <td class="notice_td">2020-11-19</td>
+            <td class="notice_td">2020-11-20</td>
+            <td class="notice_td">dfg652</td>
+            <td class="notice_td">dldydgus</td>
+          </tr>
+          <tr class="notice_tr">
+            <td onclick="location.href='main.html'" class="notice_td1">12349</td>
+            <td class="notice_td">2020-11-19</td>
+            <td class="notice_td">2020-11-20</td>
+            <td class="notice_td">jwr1234</td>
+            <td class="notice_td">chlwlsdud</td>
+          </tr>
+          <tr class="notice_tr">
+            <td onclick="location.href='main.html'" class="notice_td1">12350</td>
+            <td class="notice_td">2020-11-20</td>
+            <td class="notice_td">2020-11-21</td>
+            <td class="notice_td">wvertsfg</td>
+            <td class="notice_td">dldmswl</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!--- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="../manage.html"><img src="../img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="../img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="../img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="../img/copyright.png">
+    </div>
+  </footer>
+</body>
+
+</html>

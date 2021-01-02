@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="introduce.html">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 메인 -->
+  <main>
+    <div class="welcome">
+      저희 소프트호텔에 오신 것을 환영합니다.
+    </div>
+    <div class="login-form">
+      <form>
+        <div class="login_ID">아이디</div>
+        <input type="text" name="email" class="text-field" placeholder="e-mail">
+        <div class="login_ID">비밀번호</div>
+        <input type="password" name="password" class="text-field" placeholder="password">
+        <input type="button" value="로그인" class="submit-btn" onclick="location.href = 'login/mainLogin.html'">
+      </form>
+
+      <div class="links">
+        <a href="lostpassword.html">비밀번호를 잊어버리셨나요?</a>
+        <a href="signUp.html" class="sign_up">회원가입</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+</body>
+
+</html>

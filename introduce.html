@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="loginpage.html" class="login">로그인</a>
+      <a href="signUp.html" class="sign">회원가입</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="introduce.html">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container">
+      <div class="rList">
+          <a>호텔소개</a>
+          <hr class="two">
+      </div>
+      <div class="hotelItd">
+        <a><img src="img/introduce_image1.jpg" class="i_image1" /></a>
+        <div class="introTitle1">
+          <a class="introMainTitle">introduce<br><br></a>
+          <p>소프트호텔(SoftHotel)은 한결같이 품격있는 서비스와 시설로 고객에게 깊은 감동을 주는 브랜드를 지향하고 있습니다.</p>
+          <p>편안하고 쾌적한 객실과 서비스를 누림으로서 깊은 고객들에게 감동을 주는 브랜드를 지향하고 있습니다.</p>
+          <p>소프트호텔에서 휴식을 가지며 삶의 균형을 완성해가시길 바랍니다.</p>
+        </div>
+      </div>
+      <div class="hotelItd">
+        <a><img src="img/introduce_image2.jpg" class="i_image2" /></a>
+        <div class="introTitle2">
+          <a class="introMainTitle"><br>Vision<br></a>
+          <p>최고의 품격과 신뢰를 바탕으로 고객이 꿈꾸는 라이프스타일을 제공하는 브랜드가 되겠습니다.</p>
+        </div>
+      </div>
+      <div class="hotelItd">
+        <a><img src="img/introduce_image3.jpg" class="i_image3" /></a>
+        <div class="introTitle1">
+          <a class="introMainTitle">Purpose<br><br></a>
+          <p>최고의 시설과 서비스를 제공합니다</p>
+          <p>모든 고객에게 정성을 다합니다</p>
+          <p>모든 고객과 소통하며 존중합니다</p>
+          <p>서로를 배려하고 협력합니다</p>
+        </div>
+      </div>
+      <div class="rList">
+        <a>Floor Guide</a>
+        <hr class="two">
+      </div>
+      <div class="floorGuide">
+        <table class="floorG">
+          <tr>
+            <td class="floor">20F</td>
+            <td class="floor">Rooftop Floor</td>
+            <td class="floorr">루프탑 가든</td>
+          </tr>
+          <tr>
+            <td class="floor">2F - 19F</td>
+            <td class="floor">객실</td>
+            <td class="floorr">레지던스 객실</td>
+          </tr>
+          <tr>
+            <td class="floor">1F</td>
+            <td class="floor">로비 & 부대시설</td>
+            <td class="floorr">프론트 데스크, 로비 & 라운지, 레스토랑</td>
+          </tr>
+          <tr>
+            <td class="floor">B1 </td>
+            <td class="floor">부대시설</td>
+            <td class="floorr">수영장, 헬스장</td>
+          </tr>
+          <tr>
+            <td class="floor">B2 - B4</td>
+            <td class="floor">부대시설</td>
+            <td class="floorr">수영장</td>
+          </tr>
+        </table>
+      </div>
+      <div class="rList">
+        <a>부대시설 이용시간</a>
+        <hr class="two">
+      </div>
+      <div class="amenitiesTime">
+        <table class="restaurant">
+          <tr>
+            <td class="atime">조식</td>
+            <td class="time">7:00 ~ 10:00</td>
+          </tr>
+          <tr>
+            <td class="atime">중식</td>
+            <td class="time">12:30 ~ 14:00</td>
+          </tr>
+          <tr>
+            <td class="atime">석식</td>
+            <td class="time">17:30 ~ 21:30</td>
+          </tr>
+        </table>
+        <table class="swimmingPool">
+          <tr>
+            <td class="atime">수영장</td>
+            <td class="time">10:00 ~ 21:30</td>
+          </tr>
+        </table>
+        <table class="gym">
+          <tr>
+            <td class="atime">헬스장</td>
+            <td class="time">6:30 ~ 22:00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="rList">
+        <a>Location</a>
+        <hr class="two">
+      </div>
+      <div class="location">
+        <p>경기도 안산시 상록구 한양대학로 55</p>
+      </div>
+      <div class="question">
+        <p>문의사항 010-0000-0000</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+  <script src="js/mainBookingBar.js"></script>
+</body>
+
+</html>

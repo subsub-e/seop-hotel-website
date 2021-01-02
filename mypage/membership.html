@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="membership.html" class="login">마이페이지</a>
+      <a href="../main.html" class="sign">로그아웃</a>
+    </div>
+
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="../roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="../ntroduce.html">호텔소개</a>
+        </div>
+        <a href="../main.html"><img src="../img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="../customerService.html">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="../notice.html">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="container_mypage">
+      <div class="mypage_content">
+        <div class="mypage_content_title">
+          마이페이지
+        </div>
+        <hr class="three">
+        <div class="mypage_content_membership">
+          <a href="membership.html">나의 멤버쉽 정보</a>
+          <a class="mypage_content_membership_1">></a>
+        </div>
+        <div class="mypage_content_reservation">
+          <a href="reservationcheck.html">예약 확인 / 취소</a>
+        </div>
+        <div class="mypage_content_coupon">
+          <a href="coupon.html">쿠폰함</a>
+        </div>
+        <div class="mypage_content_service">
+          <a href="question.html">문의 내역</a>
+        </div>
+        <div class="mypage_content_privacy">
+          개인정보
+        </div>
+        <hr class="four">
+        <div class="mypage_content_privacy_1">
+          <a href = "password.html">프로필 수정</a>
+        </div>
+        <div class="mypage_content_privacy_2">
+          <a href="withdrawal.html">탈퇴 요청</a>
+        </div>
+      </div>
+      <div class="mypage_main">
+        <div class="mypage_header">
+          my page > 나의 멤버쉽 정보
+        </div>
+        <div class="mypage_main_title">
+          나의 멤버쉽 정보
+        </div>
+        <hr class = "five">
+        <div class="mypage_main_information">
+          ooo님의 소프트 등급 및 포인트에 대한 안내입니다.
+        </div>
+        <table class = "mypage_main_table1">
+          <tr>
+            <th>이름</th>
+            <th>고객 번호</th>
+            <th>고객 등급</th>
+            <th>포인트</th>
+          </tr>
+          <tr>
+            <td>이 승 섭</td>
+            <td>123456</td>
+            <td>CLASSIC</td>
+            <td>10</td>
+          </tr>
+        </table>
+        <div class="mypage_membership_title2">
+          이용실적
+          <input type="button" name="등급별 혜택 보기" value="등급별 혜택 보기" class = "mypage_main_button1">
+        </div>
+        <table class="mypage_main_table2">
+          <tr>
+            <th>투숙횟수</th>
+            <th>투숙일수</th>
+            <th>결제금액</th>
+          </tr>
+          <tr>
+            <td class = "td5">1회</td>
+            <td class = "td6">2박</td>
+            <td class = "td7">582,000원</td>
+          </tr>
+        </table>
+        <div class="mypage_membership_title3">
+          최근 6개월 내 포인트 적립/사용내역
+        </div>
+        <table class = "mypage_main_table3">
+          <tr>
+            <th>구분</th>
+            <th>이용내역</th>
+            <th>적립포인트</th>
+            <th>사용포인트</th>
+            <th>누적포인트</th>
+            <th>날짜</th>
+          </tr>
+          <tr>
+            <td class = "td8">적립</td>
+            <td class = "td9">적립</td>
+            <td class = "td10">10</td>
+            <td class = "td11">0</td>
+            <td class = "td12">10</td>
+            <td class = "td13">2020.11.17</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="../roomList.html">예약하기</a></li>
+        <li><a href="../introduce.html">호텔소개</a></li>
+        <li><a style="text-align: right;" href="../customerService.html">고객문의</a></li>
+        <li><a style="text-align: right;" href="../notice.html">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="../main.html"><img src="../img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="../img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="../img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="../img/copyright.png">
+    </div>
+  </footer>
+  <script src="js/mainBookingBar.js"></script>
+</body>
+</html>
